@@ -9,24 +9,20 @@ public class Fibonacci {
 		System.out.println("The F" + nth + " term of the Fibonacci sequence is: " + nthPlace(nth));
 
 	}
-	
-	static int n1 = 0, n2 = 1, n3 = 0, fib = 0;
-	
-//	public static int nthPlace (int n) {
-//		
-//		if (n == 0 || n == 1) {
-//			return n;
-//		}
-//		else if (n > 0) {
-//			fib = n1 + n2;
-//			n1 = n2;
-//			n2 = fib;
-//			nthPlace(n - 1);
-//		}
-//		
-//		return fib;
-//	}
-	
+
+	/**
+	* Returns the value of the nth place in the Fibonacci sequence. 
+	* The n argument specifies the F(n) number place being passed into the nthPlace method.
+	* <p>
+	* This method uses the equation of recurrence relation to calculate
+	* what the corresponding value of the given F(n) number place
+	* (nth term) is.
+	* 
+	* @author 	   Justin Roberts
+	* @param  n	   the F(n) number place passed from the main method
+	* @return      the value correlating to the given F(n) number place
+	* @see         Image
+	*/
 	public static int nthPlace(int n) 
 	{
 		if (n <= 1)
@@ -34,5 +30,4 @@ public class Fibonacci {
 		
 		return nthPlace(n-1) + nthPlace(n-2);
 	}
-
 }
