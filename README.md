@@ -1,3 +1,3 @@
-# -cen4802
-## Justin Roberts
-Repository for SOFTWARE INTEGRATION, CONFIGURATION, AND TESTING (cen4802)
+# Fibonnaci
+
+### Simple Fibonacci Application. Application returns nth value of the fibonacci sequence in corallation to the term passed into the "nthPlace" method. *Hash Map is implemented to improve application efficiency when working with bigger terms.*
